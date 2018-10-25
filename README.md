@@ -83,6 +83,6 @@ jagilpe_encryption:
 The encryption is disabled as default. For further instruction about how to enable and use the bundle you can refer to
 the usage documentation [here](Resources/doc/index.md)
 
-# API Reference
+# API Reference (Original)
 
 https://api.gilpereda.com/encryption-bundle/master/
