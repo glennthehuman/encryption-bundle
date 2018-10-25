@@ -386,7 +386,7 @@ class KeyManager implements KeyManagerInterface
         }
         elseif ($this->accessChecker->canUseOwnerPrivateKey($entity, $user)) {
             // Check if the logged in user can decrpyt the data without private key
-            $vivaUser = $entity->getUserProfile()->getUser();
+            $vivaUser = $entity->getOwnerUser();
             $userKey = base64_decode($encryptedKey->getKey($vivaUser));
             $privateKey = $this->keyStore->getPrivateKey($vivaUser);
         }
