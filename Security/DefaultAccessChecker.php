@@ -21,7 +21,7 @@ class DefaultAccessChecker implements AccessCheckerInterface
      */
     public function getAllowedUsers($entity)
     {
-        return array();
+        return [$entity->getOwnerUser()];
     }
 
     /**
@@ -29,6 +29,6 @@ class DefaultAccessChecker implements AccessCheckerInterface
      */
     public function canUseOwnerPrivateKey($entity, $user = null)
     {
-
+        return true;//TODO proper checking
     }
 }
